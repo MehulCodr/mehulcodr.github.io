@@ -340,7 +340,41 @@ nav a:hover, .site-footer a:hover { text-decoration: underline; }
 .timeline-row h3 span { color: var(--muted); font-weight: 500; }
 .timeline-row h3 + p { margin-top: 7px; color: var(--muted); max-width: 70ch; }
 
+.timeline-points {
+  max-width: 70ch;
+  margin: 10px 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+
+.timeline-points li + li { margin-top: 5px; }
+.timeline-points li::marker { color: var(--accent); }
+.timeline-note { margin-top: 5px; color: var(--muted); font-size: .9rem; }
+
 .background-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 28px; }
+
+.certs { border-top: 1px solid var(--line); background: #f2f0eb; }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cert-grid li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fdfcf9;
+}
+
+.cert-grid h3 { font-size: 1.1rem; letter-spacing: -.035em; }
+.cert-issuer { color: var(--accent); font: 600 .68rem/1.4 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .background-card { padding: clamp(17px, 2.5vw, 27px); }
 .toolkit {
   display: grid;

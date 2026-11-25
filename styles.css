@@ -442,6 +442,7 @@ nav a:hover, .site-footer a:hover { text-decoration: underline; }
 @media (max-width: 540px) {
   .header-inner { flex-wrap: wrap; gap: 2px 14px; padding-block: 9px; min-height: 68px; }
   .brand { min-height: 44px; }
+  nav { flex-wrap: wrap; gap: 0 16px; }
   .timeline-row, .background-grid { grid-template-columns: 1fr; }
   .timeline-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 10px; }
   .timeline-meta p + p { margin-top: 0; }
